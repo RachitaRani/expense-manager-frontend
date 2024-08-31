@@ -7,6 +7,12 @@ Below are some images:
 <img src="src/images/income.png" alt="income"><br>
 <img src="src/images/expense.png" alt="expense"><br>
 
+##Libraries used :
+<a href="https://ng.ant.design/docs/introduce/en">NG-ZORRO</a>
+<a href="https://www.chartjs.org/docs/latest/">Chart.js</a>
+
+To install please go through the installation manual and choose compattible version accordingly.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
