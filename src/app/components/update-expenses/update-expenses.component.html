@@ -1,0 +1,42 @@
+<div>
+    <div nz-row>
+        <div nz-col nxFlex="2">
+            <nz-card nzType="inner" style="margin-top: 16px;" nzTitle="Update Expense">
+                <form nz-form [formGroup]="expenseForm" (ngSubmit)="submitForm()" class="custom-form">
+                    <nz-form-item>
+                        <nz-form-control nzErrorTip="Please input the title">
+                            <input type="text" nz-input formControlName="title" placeholder="Enter Title">
+                        </nz-form-control>
+                    </nz-form-item>
+                    <nz-form-item>
+                        <nz-form-control nzErrorTip="Please input the amount">
+                            <input type="number" nz-input formControlName="amount" placeholder="Enter Amount">
+                        </nz-form-control>
+                    </nz-form-item>
+                    <nz-form-item>
+                        <nz-form-control nzErrorTip="Please input the date">
+                            <nz-date-picker style="width: 100%;" formControlName="date"></nz-date-picker>
+                        </nz-form-control>
+                    </nz-form-item>
+                    <nz-form-item>
+                        <nz-form-control nzErrorTip="Please input the description">
+                            <textarea nz-input placeholder="Enter Description" [nzAutosize]="{minRows:2, maxRows:6}" formControlName="description"></textarea>
+                        </nz-form-control>
+                    </nz-form-item>
+                    <nz-form-item ngErrorTip="Please input the Category">
+                        <nz-form-control>
+                            <nz-select nzAllowClear nzPlaceholder="Select the Category" formControlName="category">
+                                <nz-option *ngFor="let category of listOfCategory" [nzLabel]="category" [nzValue]="category"></nz-option>
+                            </nz-select>
+                        </nz-form-control>
+                    </nz-form-item>
+
+                    <button nzbutton nzType="primary" nzBlock [disabled]="expenseForm.invalid" class="w-100">
+                        Update Expense
+                    </button>
+                </form>
+            </nz-card>
+        </div>
+
+    </div>
+</div>

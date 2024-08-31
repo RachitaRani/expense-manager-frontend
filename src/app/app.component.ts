@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'expense-manager-frontend';
+  selectedMenu: string = 'dashboard'; // Default selected menu
+
+  selectMenu(menu: string): void {
+    this.selectedMenu = menu;
+  }
+
+  isActive(menu: string): boolean {
+    return this.selectedMenu === menu;
+  }
 }
