@@ -11,11 +11,12 @@ Below are some images:
 <a href="https://ng.ant.design/docs/introduce/en">NG-ZORRO</a>
 <a href="https://www.chartjs.org/docs/latest/">Chart.js</a>
 
-To install please go through the installation manual and choose compattible version accordingly.
+To install please go through the installation manual and choose compatible version accordingly.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.<br>
+<b>For backend SpringBoot code visit <a href="https://github.com/RachitaRani/expense-manager-backend"> Backend</a></b>
 
 ## Code scaffolding
 
